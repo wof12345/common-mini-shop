@@ -54,7 +54,7 @@ function resetAnimation() {
   let left = window.getComputedStyle(before, null).getPropertyValue("left");
   console.log(left);
 
-  if (left === "252.114px") {
+  if (left === "86.6875px") {
     before.style = `animation: none;left:0;`;
     after.style = `animation:none;left:0;`;
 
@@ -70,15 +70,21 @@ function foldPage() {
     generalAnimation(
       [siginCont, registerCont, animation_text_container, forgot_pass_cont],
       [
-        "transform:translateX(-400px);",
-        "transform:translateX(0px);max-height: 320px;",
+        "transform:translateX(-500px);max-height: 170px;",
+        "transform:translateX(-500px);max-height: 320px;",
         "min-height: 100px;",
         "display:none",
       ]
     );
     setTimeout(() => {
-      generalAnimation([siginCont], ["display:none"]);
-    }, 500);
+      generalAnimation(
+        [siginCont, registerCont],
+        [
+          "display:none",
+          "transform:translateX(0px);max-height: 320px;transition:0s;",
+        ]
+      );
+    }, 800);
     logic.pagefold = 2;
     subtitle.textContent = "Please register to continue >";
     resetAnimation();
@@ -86,8 +92,8 @@ function foldPage() {
     generalAnimation(
       [siginCont, registerCont, animation_text_container, forgot_pass_cont],
       [
-        "transform:translateX(-400px);max-height: 170px;",
-        "transform:translateX(-400px);",
+        "transform:translateX(-500px);max-height: 170px;",
+        "transform:translateX(-500px);max-height: 170px;",
         "min-height: 200px;",
         "display:block",
       ]
@@ -96,7 +102,7 @@ function foldPage() {
       generalAnimation(
         [siginCont, registerCont],
         [
-          "transform:translateX(0px);",
+          "transform:translateX(0px);max-height: 170px;",
           "transform:translateX(500px);max-height: 170px;",
         ]
       );

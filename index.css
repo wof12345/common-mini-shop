@@ -1,7 +1,7 @@
 @import "./mainpage.css";
 
 :root {
-  --bg-color: rgb(109, 226, 205);
+  --bg-color: rgb(221, 201, 52);
   --typewriterSpeed: 3s;
   --typewriterCharacters: 8;
   --default_font_size: clamp(15px, 3vw + 15px, 17px);
@@ -74,11 +74,7 @@ input[type="button"],
   align-items: center;
   text-align: center;
   overflow: hidden;
-  background-color: #00000000;
-}
-
-.header_animated_text {
-  display: none;
+  background-color: #ebc854;
 }
 
 button:hover,
