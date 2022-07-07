@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+
+    <script defer src="./fetchfunctions.js"></script>
+    <script defer src="./logincode.js"></script>
+    <script defer src="./productcode.js"></script>
+    <script defer src="./index.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/jqueryui/jquery-ui.js"></script>
+    <script
+      defer
+      src="./common_value_extraction_and_validation_code.js"
+    ></script>
+  </head>
+
+  <body>
+    <main class="main_container">
+      <section class="header_animated_text">
+        <div class="head_cont">
+          <!-- <div class="before"></div> -->
+          <!-- <h1 class="header">Welcome!</h1> -->
+          <!-- <div class="after"></div> -->
+        </div>
+        <p class="subtitle">login ></p>
+      </section>
+
+      <section class="user_query_container">
+        <div class="outer_query_container">
+          <div class="inner_query_container">
+            <div class="input_identifier query_box">
+              <label for="username">Username/E-mail :</label>
+              <input
+                type="text"
+                name="username"
+                id="identifier"
+                class="input"
+              />
+            </div>
+
+            <div class="input_password query_box">
+              <label for="password">Password :</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="input"
+              />
+            </div>
+
+            <div class="navigation query_box">
+              <button type="button" class="login">Login</button>
+              <button type="button" class="register">
+                Register <img class="btn_img" src="./rightarrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="inner_query_container--register">
+            <div class="input_identifier query_box">
+              <label for="username">Username/E-mail :</label>
+              <input
+                type="text"
+                name="username"
+                id="register_identifier"
+                class="input"
+              />
+            </div>
+
+            <div class="input_mobile_no query_box">
+              <label for="mobile_no">Mobile no :</label>
+              <input
+                type="text"
+                name="mobile_no"
+                id="mobile_no"
+                class="input"
+              />
+            </div>
+
+            <div class="input_select_birthdate query_box">
+              <label for="birthdate">Birth-date : </label>
+              <input
+                type="text"
+                name="birthdate"
+                id="select_birthdate"
+                class="input"
+              />
+            </div>
+
+            <div class="input_password query_box">
+              <label for="password">Password :</label>
+              <input
+                type="password"
+                name="password"
+                id="register_password"
+                class="input"
+              />
+            </div>
+
+            <div class="input_password query_box">
+              <label for="reenter_password">Re-enter password :</label>
+              <input
+                type="password"
+                name="reenter_password"
+                id="reenter_password"
+                class="input"
+              />
+            </div>
+
+            <div class="navigation_register query_box">
+              <button type="button" class="register_login">
+                <img class="btn_img_register" src="./arrow-left.svg" alt="" />
+                Login
+              </button>
+              <button type="button" class="register_register">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="forgot_password">
+          Forgot password ? <a href="/">Click here</a>
+        </div>
+      </section>
+    </main>
+
+    <section class="main_page">
+      <button class="logout">Logout</button>
+
+      <h1>Availble items</h1>
+
+      <div class="products">
+        <product id="">
+          <img src="" alt="" />
+          <name>Lorem ipsum dolor sit.</name>
+          <description>Lorem ipsum dolor sit.</description>
+
+          <div class="user_view common">
+            <quantity>23</quantity>
+            <price>1234</price>
+          </div>
+
+          <div class="user_interaction common">
+            <button class="buy">Buy</button>
+            <button class="rate">Rate</button>
+          </div>
+        </product>
+      </div>
+    </section>
+
+    <button class="min">Cart</button>
+
+    <section class="user_info">
+      <h2>Cart</h2>
+
+      <h3>Total price :</h3>
+
+      <div class="user"><p class="cost">0</p></div>
+      <div class="user_cart"></div>
+      <button class="confirm">Confirm</button>
+    </section>
+
+    <section class="rate_u">
+      <div class="rate_box"></div>
+      <div class="rate_box"></div>
+      <div class="rate_box"></div>
+      <div class="rate_box"></div>
+      <div class="rate_box"></div>
+    </section>
+
+    <section class="info_box"><p>please login to continue.</p></section>
+  </body>
+</html>

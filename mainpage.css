@@ -1,0 +1,159 @@
+.main_page {
+  position: absolute;
+  left: 20px;
+  height: max-content;
+  right: 20px;
+  top: 20px;
+  background-color: rgba(193, 164, 164, 0.114);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  transform: translateX(110%);
+}
+
+.products {
+  width: 87%;
+  background-color: rgba(153, 217, 58, 0.556);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px;
+  padding: 10px;
+  text-align: center;
+}
+
+product:hover {
+  background-color: rgba(188, 184, 184, 0.249);
+  cursor: pointer;
+}
+
+product > * {
+  margin: 4px 0;
+  width: 100%;
+}
+
+product > *:hover {
+  background-color: rgba(186, 187, 188, 0.584);
+}
+
+product button {
+  max-height: 20px;
+  margin: 5px;
+}
+
+name {
+  font-size: 15px;
+}
+
+description {
+  font-size: 13px;
+}
+
+.common:first-of-type > * {
+  font-size: 11px;
+}
+
+.common {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.inv {
+  display: none;
+}
+
+.user_info {
+  position: fixed;
+  top: 100px;
+  right: -100%;
+  /* width: 300px; */
+  z-index: 101;
+  background-color: rgb(156, 217, 33);
+  height: max-content;
+  text-align: center;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 85vh;
+  padding: 4px;
+}
+
+.min {
+  position: fixed;
+  z-index: 102;
+  top: 20px;
+  right: 40px;
+  background-color: rgb(207, 201, 29);
+  display: none;
+}
+
+.user_cart {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.products .remove {
+  display: none;
+}
+
+.user_cart .buy,
+.user_cart .rate,
+.user_cart quantity {
+  display: none;
+}
+
+.info_box {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  z-index: 100;
+  font-weight: 300;
+  opacity: 0;
+}
+
+.rate_u {
+  position: fixed;
+  width: 100px;
+  height: 20px;
+  background-color: rgba(207, 141, 141, 0.456);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 7px;
+  z-index: 100;
+  left: 50%;
+  top: 40%;
+  display: none;
+}
+
+.rate_box {
+  aspect-ratio: 1/1;
+  width: 15px;
+  max-height: 15px;
+  background-color: rgb(244, 244, 244);
+  border-radius: 20px;
+  color: gold;
+}
+
+.rate_box:hover {
+  cursor: pointer;
+}
